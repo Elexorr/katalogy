@@ -1,0 +1,5 @@
+text = open("final.csv", "r")
+text = ''.join([i for i in text]).replace("  ", "")
+x = open("final2.csv", "w")
+x.writelines(text)
+x.close()
