@@ -27,6 +27,7 @@ with open('final.csv', 'w') as k:
 k.close()
 text = open("final.csv", "r")
 text = ''.join([i for i in text]).replace(" ", "")
-x = open("final2.csv", "w")
+x = open("krakow.csv", "w")
 x.writelines(text)
 x.close()
+os.remove('final.csv')
